@@ -81,8 +81,10 @@ Piveran-Projects/
 ├── PiVeRan Auto Parts/
 │   ├── Application Documentation.pdf
 │   ├── extracted_from_appsheet.txt
+│   ├── PiVeRan_AutoParts_Column_Reference.md
 │   ├── PiVeRan_AutoParts_Data_Relationships.md
-│   └── PiVeRan_AutoParts_Documentation.md
+│   ├── PiVeRan_AutoParts_Documentation.md
+│   └── piveran_erd_schema.sql
 ├── LICENSE
 └── README.md
 ```
@@ -95,8 +97,10 @@ Piveran-Projects/
 |---|---|---|
 | [`PiVeRan_AutoParts_Documentation.md`](PiVeRan%20Auto%20Parts/PiVeRan_AutoParts_Documentation.md) | Tables, columns, views, actions, permissions | Onboarding, audits, feature planning |
 | [`PiVeRan_AutoParts_Data_Relationships.md`](PiVeRan%20Auto%20Parts/PiVeRan_AutoParts_Data_Relationships.md) | All 62 FKs, ER diagrams, domain maps | Understanding table connections |
+| [`PiVeRan_AutoParts_Column_Reference.md`](PiVeRan%20Auto%20Parts/PiVeRan_AutoParts_Column_Reference.md) | Column-level details (934 columns) — data types, PK/FK, required flags, virtual columns, and formulas | Deep diving into schema definitions and formulas |
+| [`piveran_erd_schema.sql`](PiVeRan%20Auto%20Parts/piveran_erd_schema.sql) | PostgreSQL DDL script with all tables and FK constraints | Importing into ERD Lab for visual schema diagrams |
 | [`Application Documentation.pdf`](PiVeRan%20Auto%20Parts/Application%20Documentation.pdf) | AppSheet-generated full export (PDF) | Offline / printed review |
-| [`extracted_from_appsheet.txt`](PiVeRan%20Auto%20Parts/extracted_from_appsheet.txt) | Raw 40,550-line app export | Formulas, automation logic, full detail |
+| [`extracted_from_appsheet.txt`](PiVeRan%20Auto%20Parts/extracted_from_appsheet.txt) | Raw 40,550-line app export | Raw automation logic, full detail |
 
 ### Using these files with AI
 
@@ -104,8 +108,8 @@ Feed these docs into an LLM (ChatGPT, Gemini, Claude, Copilot, etc.) to speed up
 
 | Step | What to feed | When |
 |---|---|---|
-| **1. Quick context** | Both `.md` files (~55 KB total) | Default — fits one context window |
-| **2. Deep dive** | `extracted_from_appsheet.txt` | Need specific formulas, column settings, or automation rules |
+| **1. Quick context** | All three `.md` files (~100 KB total) | Default — fits in a single context window |
+| **2. Deep dive** | `extracted_from_appsheet.txt` | Need specific formulas, column settings, or automation rules not in the `.md` files |
 | **3. Visual ref** | `Application Documentation.pdf` | Using a multimodal model that accepts PDFs |
 
 **Example prompts:**
@@ -127,6 +131,8 @@ Feed these docs into an LLM (ChatGPT, Gemini, Claude, Copilot, etc.) to speed up
 
 | Date | Author | Changes |
 |---|---|---|
+| 2026-05-17 | Ranian | Added `PiVeRan_AutoParts_Column_Reference.md` with column-level formulas and schema details |
+| 2026-05-15 | Ranian | Created `piveran_erd_schema.sql` for ERD Lab visualization |
 | 2026-05-15 | Ranian | Initial documentation — extracted app export, created `PiVeRan_AutoParts_Documentation.md`, `PiVeRan_AutoParts_Data_Relationships.md`, and `README.md` |
 
 ---
