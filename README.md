@@ -83,8 +83,7 @@ Piveran-Projects/
 │   ├── extracted_from_appsheet.txt
 │   ├── PiVeRan_AutoParts_Column_Reference.md
 │   ├── PiVeRan_AutoParts_Data_Relationships.md
-│   ├── PiVeRan_AutoParts_Documentation.md
-│   └── piveran_erd_schema.sql
+│   └── PiVeRan_AutoParts_Documentation.md
 ├── LICENSE
 └── README.md
 ```
@@ -98,7 +97,6 @@ Piveran-Projects/
 | [`PiVeRan_AutoParts_Documentation.md`](PiVeRan%20Auto%20Parts/PiVeRan_AutoParts_Documentation.md) | Tables, columns, views, actions, permissions | Onboarding, audits, feature planning |
 | [`PiVeRan_AutoParts_Data_Relationships.md`](PiVeRan%20Auto%20Parts/PiVeRan_AutoParts_Data_Relationships.md) | All 62 FKs, ER diagrams, domain maps | Understanding table connections |
 | [`PiVeRan_AutoParts_Column_Reference.md`](PiVeRan%20Auto%20Parts/PiVeRan_AutoParts_Column_Reference.md) | Column-level details (934 columns) — data types, PK/FK, required flags, virtual columns, and formulas | Deep diving into schema definitions and formulas |
-| [`piveran_erd_schema.sql`](PiVeRan%20Auto%20Parts/piveran_erd_schema.sql) | PostgreSQL DDL script with all tables and FK constraints | Importing into ERD Lab for visual schema diagrams |
 | [`Application Documentation.pdf`](PiVeRan%20Auto%20Parts/Application%20Documentation.pdf) | AppSheet-generated full export (PDF) | Offline / printed review |
 | [`extracted_from_appsheet.txt`](PiVeRan%20Auto%20Parts/extracted_from_appsheet.txt) | Raw 40,550-line app export | Raw automation logic, full detail |
 
@@ -131,6 +129,7 @@ Feed these docs into an LLM (ChatGPT, Gemini, Claude, Copilot, etc.) to speed up
 
 | Date | Author | Changes |
 |---|---|---|
+| 2026-05-17 | Ranian | Removed `piveran_erd_schema.sql` |
 | 2026-05-17 | Ranian | Added `PiVeRan_AutoParts_Column_Reference.md` with column-level formulas and schema details |
 | 2026-05-15 | Ranian | Created `piveran_erd_schema.sql` for ERD Lab visualization |
 | 2026-05-15 | Ranian | Initial documentation — extracted app export, created `PiVeRan_AutoParts_Documentation.md`, `PiVeRan_AutoParts_Data_Relationships.md`, and `README.md` |
